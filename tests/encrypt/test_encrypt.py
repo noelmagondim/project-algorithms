@@ -1,6 +1,7 @@
 from challenges.challenge_encrypt_message import encrypt_message
 import pytest
 
+
 def test_encrypt_message():
     message_1 = "AABBCC"
     saida_1 = "BAA_CCB"
@@ -20,6 +21,6 @@ def test_encrypt_message():
 
     with pytest.raises(Exception):
         encrypt_message(message_3, "4")
-    
+
     with pytest.raises(Exception):
         encrypt_message(["AA", "BB"], 4)
