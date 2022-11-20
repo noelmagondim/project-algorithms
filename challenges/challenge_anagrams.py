@@ -7,6 +7,7 @@ def sort_string(any_string):
             sort = sort + any_string
     return sort
 
+
 def is_anagram(first_string, second_string):
     string_1 = sort_string(first_string.lower())
     string_2 = sort_string(second_string.lower())
